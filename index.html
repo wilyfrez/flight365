@@ -28,6 +28,12 @@
         transform: translate(-50%, -50%);
     }
 
+.logo{
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    background-image: url('img/logo1.jpg');
+   }
     @media (max-width: 1300px) {
         .sign {
             width: 70%;
@@ -53,8 +59,19 @@
         
     }
 
- @media (max-width: 767px) {
- 
+ @media (max-width: 768px) {
+    .logo {
+        height: 700px;
+        width: 100%;
+        background-image: url('img/logo2.jpg');
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        height: 500px;
+      
+    }
 }
     
 </style>
@@ -66,7 +83,7 @@
 
         <div class="row ">
 
-                <div class="col-md-6 col-lg-7 d-block d-md-none" style="background-image: url('img/logo1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; height: 70vh;">
+                <div class="col-md-6 col-lg-7 d-block d-md-none logo" >
                    
                 </div>
 
