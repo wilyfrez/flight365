@@ -32,7 +32,7 @@
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center;
-    background-image: url('img/logo1.jpg');
+    background-image: url('img/logo.gif');
    }
     @media (max-width: 1300px) {
         .sign {
@@ -84,12 +84,11 @@
         <div class="row ">
 
                 <div class="col-md-6 col-lg-7 d-block d-md-none logo" >
-                   
                 </div>
 
             <div class="col-12 col-md-6 col-lg-5 px-4">
-                <!-- Form -->
-                <form name="" autocomplete="off" class="mx-2 mx-sm-3 " action="process.php" method="POST">
+                <!-- Form 
+                <form name="" autocomplete="off"   class="mx-2 mx-sm-3 "  >-->
                     <!-- Heading -->
                     <h4 class="dark-grey-text text-center mt-4 mt-md-3 ">
                         Sign In
@@ -373,13 +372,13 @@
                         </select>
                     </div>
                     <div class="text-center my-4 mb-lg-5 ">
-                        <button type="submit" class="btn btn-primary  rounded-input w-100 mr-1" name="joinFlight" id="joinFlight">Join The Flight</button>
+                        <a type="button" href="live.html" class="btn btn-primary  rounded-input w-100 mr-1" name="joinFlight" id="joinFlight">Join The Flight</a>
 
                     </div>
 
 
-                </form>
-                <!-- Form -->
+                <!-- </form>
+                Form -->
             </div>
             <div class="col-md-6 col-lg-7 d-none d-md-block m-0" style="background-image: url('img/logo1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center">
                 
@@ -388,6 +387,32 @@
 
     </div>
 
+    	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <script>
+  //  document.getElementById('joinFlight').addEventListener('click', flight);
+
+    function flight() {
+        var name = document.getElementsByName('fullname').value;
+        var email = document.getElementsByName('email').value;
+        var dept = document.getElementsByName('dept').value;
+
+        if(name == "" || email == "" || dept == "") {
+
+        }
+        else {
+            sessionStorage.setItem('fullname', name);
+            window.location.href("live.html");
+        }
+    }
+
+
+    </script>
 </body>
 
 </html>
