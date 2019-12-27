@@ -35,7 +35,10 @@
 		}
 
 		@media (max-width: 768px) {
-			a {
+			h4{
+				font-size: 1.0rem;
+			}
+			p, a {
 				font-size: 0.9rem;
 			}
 		}
@@ -162,7 +165,7 @@
 						<div class="col-12 mb-5  mt-4">
 							<input id="commentor" type="text" name="commentor" value=" " class="d-none">
 							<textarea class="form-control  newComment py-sm-2 py-md-3 " id="newComment" name="newComment" placeholder="Add your comment "
-							 cols="30" rows="1"></textarea>
+							 cols="30" rows="3"></textarea>
 							<button type="submit" name="addComment" class="btn-sm btn-success my-2 border-0  p-2 float-right commentDetails" onclick="addComment()"
 							 id="addComment">Add Comment</button>
 						</div>
@@ -176,7 +179,7 @@
 						<div class="col-12 mb-5  mt-4">
 
 							<textarea class="form-control p-2" name="testimony" id="testimony" placeholder="Congratulations! Kindly share your testimonies with us..."
-							 cols="30" rows="4" required=""></textarea>
+							 cols="30" rows="3" required=""></textarea>
 							<button type="submit" name="testify" class="btn-sm btn-primary my-2 border-0  p-2 float-right " onclick="testify()" id="testify">Share Testimonies</button>
 						</div>
 					</div>
@@ -187,7 +190,7 @@
 						<!--Share Testimonies-->
 						<div class="col-12 mb-5  mt-4">
 
-							<textarea class="form-control p-2" name="questions" id="questions" placeholder="Enter your questions here." cols="30" rows="4"
+							<textarea class="form-control p-2" name="questions" id="questions" placeholder="Enter your questions here." cols="30" rows="3"
 							 required=""></textarea>
 							<button type="submit" name="askQuestions" class="btn-sm btn-info my-2 border-0  p-2 float-right " onclick="askQuestions()"
 							 id="askQuestions">Ask Questions</button>
