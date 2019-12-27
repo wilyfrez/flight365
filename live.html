@@ -17,13 +17,23 @@
 	<link href="myStyle.css" rel="stylesheet">
 
 	<style type="text/css">
-		.vid-show {
-			box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+		.content-box {
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 		}
 
-		/*	body{
-			background-color: #f7f8fa;
-		} */
+		.nav-tabs .nav-link.active {
+			color: #007bff !important;
+		}
+
+		a {
+			color: #495057 !important;
+		}
+
+		@media (max-width: 576px) {
+			a {
+				font-size: 0.7rem;
+			}
+		}
 	</style>
 
 
@@ -57,7 +67,7 @@
 				<div class="collapse navbar-collapse" id="myNavbar">
 
 					<!-- Left -->
-					<ul class="navbar-nav mr-auto">
+					<ul class="navbar-nav mr-auto d-flex flex-nowrap">
 						<li class="nav-item active">
 							<a class="nav-link " href="#">Live
 								<span class="sr-only">(current)</span>
@@ -103,39 +113,39 @@
 	<div class="">
 		<div class="row ">
 			<div class="col"></div>
-			<div class="col-12 col-lg-8 bg-white mt-lg-3">
+			<div class="col-12 col-lg-8 bg-white content-box mt-lg-3">
 				<div class="mt-lg-4 mx-lg-2 mb-lg-2 m-0">
 					<video class=" w-100" src="vid/promo.mp4" controls></video>
 				</div>
-				
+
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Info</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">Comments</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="testimonies-tab" data-toggle="tab" href="#testimonies" role="tab" aria-controls="testimonies" aria-selected="false">Testimonies</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="questions-tab" data-toggle="tab" href="#questions" role="tab" aria-controls="questions" aria-selected="false">Q&A</a>
-						</li>
-					</ul>
-					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">Overview</div>
-						<div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">Comments</div>
-						<div class="tab-pane fade" id="testimonies" role="tabpanel" aria-labelledby="testimonies-tab">Testimonies</div>
-						<div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">questions</div>
-	
-					</div>
-			
+					<li class="nav-item">
+						<a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Info</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">Comments</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="testimonies-tab" data-toggle="tab" href="#testimonies" role="tab" aria-controls="testimonies" aria-selected="false">Testimonies</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="questions-tab" data-toggle="tab" href="#questions" role="tab" aria-controls="questions" aria-selected="false">Q&A </a>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">Overview</div>
+					<div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">Comments</div>
+					<div class="tab-pane fade" id="testimonies" role="tabpanel" aria-labelledby="testimonies-tab">Testimonies</div>
+					<div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">questions</div>
+
+				</div>
+
 			</div>
 
 
 			<div class="col"></div>
 
-		
+
 		</div>
 	</div>
 
