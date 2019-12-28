@@ -48,14 +48,42 @@
 			border-radius: 15px;
 		}
 
+		.comment-box {
+			border: 1px solid #f7f8fa;
+			background-color: #f7f8fa;
+			border-radius: 15px;
+		}
+
+
+		.commentor-name {
+			font-weight: 600;
+			color: #024a97;
+		}
+
+		.sm-comment-name{
+			margin-left: 80px;
+		}
+
+		.timeAgo {
+			font-size: 0.85rem;
+			margin-left: 80px;
+			font-weight: 400;
+			
+		}
+
 		@media (max-width: 768px) {
 			h4 {
 				font-size: 1.0rem;
 			}
+
 			p,
 			a {
 				font-size: 0.9rem;
 			}
+		}
+
+		.timeAgo {
+			font-size: 0.8rem;
 		}
 
 		@media (max-width: 576px) {
@@ -79,7 +107,7 @@
 			}
 			.textarea {
 				font-size: 0.8rem;
-				}
+			}
 
 			.videoplayer {
 				position: fixed;
@@ -97,6 +125,12 @@
 
 			.btn-style {
 				font-size: 0.8rem !important;
+				padding: 0.35rem !important;
+				border-radius: 12px;
+			}
+
+			.timeAgo {
+				font-size: 0.7rem;
 			}
 
 		}
@@ -237,7 +271,25 @@
 							<textarea class="form-control textarea  py-sm-2 py-md-3 " id="newComment" name="newComment" placeholder="Add your comment "
 							 cols="30" rows="2"></textarea>
 							<button type="submit" name="addComment" class="btn-sm btn-white my-2 btn-style  p-2 float-right commentDetails" onclick="addComment()"
-							 id="addComment">Add Comment</button>
+							 id="addComment">Post Comment</button>
+						</div>
+
+						<div class="posted-comments">
+							<div class="row ">
+									<div class="col-12 commentor-name sm-comment-name mr-md-3 d-block d-md-none">John Paul</div>
+									<div class="col-1">
+									<img class="rounded-circle mr-3" src="img/pic.png" height="40px" width="40px" alt="">
+								</div>
+
+								<div class="col-11  comment-box w-100 p-2">
+									<span class="commentor-name mr-md-3 d-none d-md-block">John Paul</span>
+									 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut. 
+								</div>
+								<div class="col-12 timeAgo"> 2hrs ago</div>
+							</div>
+
+
+
 						</div>
 					</div>
 					<!--End Tab content for comment tab -->
