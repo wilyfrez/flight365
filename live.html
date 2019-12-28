@@ -67,10 +67,21 @@
 			margin-left: 80px;
 		}
 
-		.timeAgo {
+		.timeAgo,
+		.country {
 			font-size: 0.75rem;
-			font-weight: 400;
+			font-weight: 500;
+		}
 
+		/*--Testimony Section --*/
+
+		.posted-testimony p {
+			margin-bottom: 4px !important;
+		}
+
+		.testify-name {
+			font-size: 0.9rem;
+			color: #024a97;
 		}
 
 		@media (max-width: 768px) {
@@ -78,23 +89,28 @@
 				font-size: 1.0rem;
 			}
 
-			p,
-			a {
+			
+		.tab-content ul li,	p,	a {
 				font-size: 0.9rem;
 			}
 		}
 
-		.timeAgo {
+		.timeAgo,
+		.country {
 			font-size: 0.7rem;
 		}
-		
-		.pic img{
+
+		.pic img {
 			height: 35px;
 			width: 35px;
 		}
 
-		.comment-box{
+		.comment-box {
 			font-size: .85rem;
+		}
+
+		.testify-name {
+			font-size: 0.8rem;
 		}
 		@media (max-width: 576px) {
 			.navbar {
@@ -111,10 +127,10 @@
 				font-size: 0.9rem;
 			}
 
-			p,
-			a {
+		.tab-content ul li,	p, a {
 				font-size: 0.8rem;
 			}
+			
 			.textarea {
 				font-size: 0.8rem;
 			}
@@ -139,17 +155,27 @@
 				border-radius: 12px;
 			}
 
-			.timeAgo {
+			.timeAgo,
+			.country {
 				font-size: 0.65rem;
 			}
 
 			.pic img {
-				height: 25px;
-				width: 25px;
+				height: 15px;
+				width: 15px;
+				visibility: hidden;
 			}
-			.comment-box{
-			font-size: .75rem;
+			.comment-box {
+				font-size: .75rem;
+			}
+
+		.testify-name {
+			font-size: 0.8rem;
 		}
+
+			footer {
+				font-size: 0.7rem;
+			}
 		}
 
 		@media (max-width: 375px) {
@@ -163,6 +189,10 @@
 				margin-top: 17.3rem;
 			}
 
+			.pic img {
+				height: 10px;
+				width: 10px;
+			}
 		}
 	</style>
 
@@ -252,9 +282,7 @@
 						<li class="nav-item">
 							<a class="nav-link" id="testimonies-tab" data-toggle="tab" href="#testimonies" role="tab" aria-controls="testimonies" aria-selected="false">Testimonies</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="questions-tab" data-toggle="tab" href="#questions" role="tab" aria-controls="questions" aria-selected="false">Q&A </a>
-						</li>
+					
 					</ul>
 
 				</div>
@@ -348,22 +376,40 @@
 							 cols="30" rows="2" required=""></textarea>
 							<button type="submit" name="testify" class="btn-sm btn-white my-2 btn-style  p-2 float-right " onclick="testify()" id="testify">Share Testimonies</button>
 						</div>
-					</div>
-					<!--End Tab content for Testimonies tab -->
-					<!--Start Tab content for Q&A tab -->
 
-					<div class="tab-pane  fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">
-						<!--Share Testimonies-->
-						<div class="col-12 mb-5  mt-4">
-
-							<textarea class="form-control p-2 textarea" name="questions" id="questions" placeholder="Enter your questions here." cols="30"
-							 rows="2" required=""></textarea>
-							<button type="submit" name="askQuestions" class="btn-sm btn-white my-2 btn-style  p-2 float-right " onclick="askQuestions()"
-							 id="askQuestions">Ask Questions</button>
+						<!--Posted Testimonies-->
+						<div class="posted-testimony ">
+							<div class="px-2 px-md-3 ">
+								<strong class="testify-name d-block">Tom Matthew
+									<span class="mr-3 text-secondary">Testifies</span>
+								</strong>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur aliquid amet at blanditiis cum! Perspiciatis porro
+									qui dolores deserunt culpa?</p>
+								<em class="country d-block">from Nigeria</em>
+								<hr>
+							</div>
+							<div class="px-2 px-md-3 ">
+								<strong class="testify-name d-block">Tom Matthew
+									<span class="mr-3 text-secondary">Testifies</span>
+								</strong>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur aliquid amet at blanditiis cum! Perspiciatis porro
+									qui dolores deserunt culpa?</p>
+								<em class="country d-block">from Nigeria</em>
+								<hr>
+							</div>
+							<div class="px-2 px-md-3 ">
+								<strong class="testify-name d-block">Tom Matthew
+									<span class="mr-3 text-secondary">Testifies</span>
+								</strong>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur aliquid amet at blanditiis cum! Perspiciatis porro
+									qui dolores deserunt culpa?</p>
+								<em class="country d-block">from Nigeria</em>
+								<hr>
+							</div>
 						</div>
 					</div>
-					<!--End Tab content for Q&A tab -->
-
+					<!--End Tab content for Testimonies tab -->
+				
 				</div>
 
 			</div>
@@ -461,7 +507,7 @@
 
 
 		<!--Copyright-->
-		<div class="footer-copyright text-white py-3">
+		<div class="footer-copyright text-white py-1 py-lg-2">
 			© 2019 Media-Programming, OCEO:
 
 		</div>
